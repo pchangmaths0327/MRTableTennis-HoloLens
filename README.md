@@ -20,3 +20,7 @@ There are 4 "sub-scenes" in `MainScene.unity`:
 2. **PlayerMenu**: shows two buttons for selecting 1 or 2 players (number of players wearing HoloLens). In theory, selecting "2 Players" should lead to an interface where the HoloLens tries to connect with the other one. For now, clicking on either one leads to the next sub-scene directly.
 3. **TableDetectionMenu**: tries to detect platforms in the scene and fit the table plane to it. When the table is detected, the message changes from "Detecting Table..." to "Table Detected!". The user can then manipulate it to fit it more accurately. This part uses the `Windows Scene Understanding Observer` (see `Mixed Reality Toolkit > Spatial Awareness`). A small menu follows the user allowing to refresh detection, hide/show the table and apply the changes to go to the next scene.
 4. **PlayingScene**: this section is activated once the table is detected and the user selects "Done". The table becomes green and cannot be manipulated anymore. A message indicates the game can start.
+
+# Get it running
+
+A deployed HoloLens app package for ARM64 can be found [here](App/MRTableTennis-HoloLens_(ARM64).zip). Simply use HoloLens' Device Portal to install it and you are good to go! The associated Android app can be found [here](https://github.com/Sevilaa/m3ts).
